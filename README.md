@@ -4,7 +4,7 @@
 
 ### Control Flow Graph
 
-![finalfinalsilab](https://github.com/LeonaVolkanoska/SI_2023_lab2_213017/assets/61162225/60c249e5-4985-4c72-ab0a-7c87b2bd0964)
+![finalfinalsilab](https://github.com/LeonaVolkanoska/SI_2023_lab2_213017/assets/61162225/77963100-47d0-498a-8025-0a8ad0707d5b)
 
 ### Цикломатска комплексност
 Цикломатската комплексност на овој код е 11, истата ја добив на два начини: 
@@ -13,8 +13,21 @@
 
 ### Тест случаеви според критериумот Every statement
 
-![prvatabela](https://github.com/LeonaVolkanoska/SI_2023_lab2_213017/assets/61162225/1c9ca57a-0f83-4c42-bbca-5e9ebdd40ac4)
+![prvatabela](https://github.com/LeonaVolkanoska/SI_2023_lab2_213017/assets/61162225/4a4af0b5-3e2d-404e-8b6c-fd534897a90d)
+
+За да ги изминам сите ребра (Every Branch) ги користам следните услови:
+- (user != null) && (password != null) && (mail != null) И (user == null) || (password == null) || (mail == null)
+- email да содржи "@" и "." и email да не содржи "@" и "."
+- allUsers list да е празна и allUsers list да не е празна
+- еxistingUSer != email и existingUser == email
+- username == null
 
 ### Тест случаеви според критериумот Every Path
 
-![tabela2](https://github.com/LeonaVolkanoska/SI_2023_lab2_213017/assets/61162225/fdbac3ef-8e75-449f-ab05-633b203ec3f0)
+![tabela2](https://github.com/LeonaVolkanoska/SI_2023_lab2_213017/assets/61162225/1443781a-e66a-42cc-af49-cf6179851f3e)
+
+Потребни тест случаеви за Multiple Condition if (user==null || user.getPassword()==null || user.getEmail()==null) се:
+- (user != null) && (password != null) && (mail != null)
+- (user == null)
+- (password == null)
+- (mail == null)
